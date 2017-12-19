@@ -1,0 +1,28 @@
+/* Fonts */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* Bootstrap */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css';
+
+
+/* Reset */
+body {
+  background: #212121;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #BDBDBD;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  /* color: #FFF; */
+  text-decoration: none;
+}

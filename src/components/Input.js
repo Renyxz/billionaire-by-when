@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { handleData } from '../actions';
+import { withRouter } from 'react-router-dom';
 
 
 class Input extends Component {
-    constructor(prop) {
-        super(prop);
+    constructor(props) {
+        super(props);
 
         this.state = {
             dates: ['day', 'week', 'month', 'year'],
@@ -63,8 +60,7 @@ class Input extends Component {
         const capital = Number(this.refs.capital.value);
         const growth = Number(this.refs.growth.value);
     
-        (isNaN(capital) || isNaN(growth)) 
-        ? alert('Your inputs must be numbers!')
+        (isNaN(capital) || isNaN(growth)) ? alert('Your inputs must be numbers!')
         : this.setState({
             capital,
             growth
@@ -76,19 +72,30 @@ class Input extends Component {
     onSubmit(event) {
         event.preventDefault();
 
+        const capital = this.state.capital;
+        const growth = this.state.growth;
+
+        if(capital <= 0 || growth <= 1) {
+            alert('You need something to grow at a rate greater than 1...');
+            return;
+        }
+
         const data = {
-            capital: this.state.capital,
-            growth: this.state.growth,
+            capital,
+            growth,
             selectedDate: this.state.selectedDate
         }
 
-        this.props.handleData(data);
+        this.props.history.push({
+            pathname: '/report',
+            state: data
+        });
+
     }
-
-
-
+    
+    
+    
     render() {
-        console.log(this.state.capital);
 
         return(
             <div className="row fade-in">
@@ -123,9 +130,9 @@ class Input extends Component {
                             </div>
                         </div>
 
-                        <Link className="submit-btn form-control" onSubmit={ this.onSubmit } to="/report">
+                        <button className="submit-btn form-control" onSubmit={ this.onSubmit }>
                             Show me when!
-                        </Link>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -133,8 +140,4 @@ class Input extends Component {
     }
 }
 
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ handleData: handleData }, dispatch);
-}
-
-export default connect(mapDispatchToProps, { handleData })(Input);
+export default withRouter(Input);

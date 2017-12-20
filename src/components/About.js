@@ -16,11 +16,11 @@ class About extends Component {
                             <br/>
 
                             If you like this app, please 
-                            <a className="social-button twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Find%20out%20when%20you'll%20become%20a%20billionaire!%20https%3A//renyxz.github.io/billionaire-by-when" rel="noopener noreferrer"> 
+                            <a className="social-button twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Find%20out%20when%20you'll%20become%20a%20billionaire!%20https%3A//billionaire-by-when.firebaseapp.com" rel="noopener noreferrer"> 
                             <i className="fa fa-twitter"></i> Tweet
                             </a> 
                             or
-                            <a className="social-button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//renyxz.github.io/billionaire-by-when" rel="noopener noreferrer"> 
+                            <a className="social-button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//billionaire-by-when.firebaseapp.com" rel="noopener noreferrer"> 
                             <i className="fa fa-facebook"></i> Share
                             </a>
                             on facebook!

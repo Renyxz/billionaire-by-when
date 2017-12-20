@@ -10,7 +10,25 @@ class About extends Component {
                         <h1>Hello, future billionaires.</h1>
 
                         <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. 
+                            This app is brought to you via the inspiration of the "Double a Penny a Day" analogy and I hope that you enjoyed playing with it. Some people who have heard of that analogy probably thought of it as a fairy tale because it could be hard to double the value of something within one day. But that doesn't make it impossible! Building wealth sure does require a lot of hustling. It is the combination of preparation, perseverance, and patience making it possible. Oh and, don't forget, fantasies do motivate people to keep going <span role="img" aria-label="Unicorn">🦄</span>.
+
+                            <br/>
+                            <br/>
+
+                            If you like this app, please 
+                            <a className="social-button twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Find%20out%20when%20you'll%20become%20a%20billionaire!%20https%3A//renyxz.github.io/billionaire-by-when" rel="noopener noreferrer"> 
+                            <i className="fa fa-twitter"></i> Tweet
+                            </a> 
+                            or
+                            <a className="social-button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//renyxz.github.io/billionaire-by-when" rel="noopener noreferrer"> 
+                            <i className="fa fa-facebook"></i> Share
+                            </a>
+                            on facebook!
+                        
+                            <br/>
+                            <br/>
+
+                            Happy wealth adventure!
                         </p>
                     </div>
                 </div>

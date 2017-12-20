@@ -12,28 +12,19 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Report from './components/Report';
 
-// React-Redux
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-
-// Reducers
-import reducers from './reducers';
-
 // Service
 import registerServiceWorker from './registerServiceWorker';
 
 
 
 ReactDOM.render(
-    <Provider store={ createStore(reducers) }>
-        <BrowserRouter>
-            <div>
-                <Route exact path="/" component={ App } />
-                <Route path="/" component={ Navbar } />
-                <Route exact path="/about" component={ About } />
-                <Route exact path="/report" component={ Report } />
-            </div>
-        </BrowserRouter>
-    </Provider>
+    <BrowserRouter>
+        <div>
+            <Route exact path="/" component={ App } />
+            <Route path="/" component={ Navbar } />
+            <Route exact path="/about" component={ About } />
+            <Route exact path="/report" component={ Report } />
+        </div>
+    </BrowserRouter>
     , document.getElementById('root'));
 registerServiceWorker();

@@ -136,7 +136,52 @@
 
 /* Report */
 .report-container {
-    margin-top: 5rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-wrapper > p {
+    font-size: 2rem;
+    line-height: 200%;
+    text-align: center;
+}
+
+.report-wrapper > p > span {
+    color: #00C853;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/* Social media */
+.social-button {
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 0.8rem;
+}
+
+.social-button:hover {
+    color: #FFF;
+}
+
+.twitter {
+    background: #1DA1F2;
+}
+
+.twitter:hover {
+    background: rgb(25, 138, 207);
+}
+
+.facebook {
+    background: #3B5998;
+}
+
+.facebook:hover {
+    background: rgb(48, 72, 124);
 }
 
 
